@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Visualize code",
+  "version": "0.1.0",
+  "description": "Visualize code",
+ "web_accessible_resources": ["inject.js"],
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["jQuery.js","content.js","script.js"],
+    "matches": ["https://leetcode.com/*","http://ideone.com/*"]
+  }]
+
+}
